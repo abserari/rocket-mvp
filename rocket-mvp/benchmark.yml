@@ -1,0 +1,10 @@
+---
+threads: 4
+base: 'http://localhost:8000' # Use your deployment URL here
+iterations: 50
+rampup: 2
+
+plan:
+  - name: Retrieve Page Views
+    request:
+      url: /page_view

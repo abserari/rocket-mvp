@@ -30,5 +30,6 @@ fn main() {
             routes::list_page_views,
         ])
         .attach(DbConn::fairing())
+        .attach(cors::CorsFairing)
         .launch();
 }
